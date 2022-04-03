@@ -2,6 +2,10 @@
 
 ## Linear Regression to Predict MPG
 
+### Multiple Linear Regression Summary
+
+![summary1](https://raw.githubusercontent.com/jmsuarez1997/MechaCar_Statistical_Analysis/main/Resources/Images/Summary1.png)
+
 Two variables had a non-random amount of variance in the mpg values. The variable vehicle_length had a p-value of 2.60e-12, and ground_clearance had a p-value of 5.21e-08. P-values under .05 are considered significant in this model.
 
 The slope is not considered to be zero. The coefficients in our lm() analysis have unique slopes for each variable. Our multiple linear regression model will look like the following:
@@ -14,4 +18,12 @@ This linear model can effectively predict the mpg of MechaCar prototypes. The R-
 
 ## Summary Statistics on Suspension Coils
 
+### Total Summary
+![total_summary](https://raw.githubusercontent.com/jmsuarez1997/MechaCar_Statistical_Analysis/main/Resources/Images/total_summary.png)
+
+### Lot_Summary
+![Lot_summary](https://raw.githubusercontent.com/jmsuarez1997/MechaCar_Statistical_Analysis/main/Resources/Images/Lot_Summary.png)
+
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. The current manufacturing data meets these specifications for the total_summary table. However, Lot3 in the lot_summary table has a variance of 170.2 and does not meet the design specifications. 
+
+
