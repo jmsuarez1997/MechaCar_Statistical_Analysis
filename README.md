@@ -6,7 +6,7 @@
 
 ![summary1](https://raw.githubusercontent.com/jmsuarez1997/MechaCar_Statistical_Analysis/main/Resources/Images/Summary1.png)
 
-Two variables had a non-random amount of variance in the mpg values. The variable vehicle_length had a p-value of 2.60e-12, and ground_clearance had a p-value of 5.21e-08. P-values under .05 are considered significant in this model.
+Two variables had a non-random amount of variance, the variable vehicle_length had a p-value of 2.60e-12, and ground_clearance had a p-value of 5.21e-08. P-values under .05 are considered significant in this model.
 
 The slope is not considered to be zero. The coefficients in our lm() analysis have unique slopes for each variable. Our multiple linear regression model will look like the following:
 
@@ -26,4 +26,16 @@ This linear model can effectively predict the mpg of MechaCar prototypes. The R-
 
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. The current manufacturing data meets these specifications for the total_summary table. However, Lot3 in the lot_summary table has a variance of 170.2 and does not meet the design specifications. 
 
+## T-Tests on Suspension Coils
 
+briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
+
+## Study Design: MechaCar vs Competition
+
+Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
+
+
+What metric or metrics are you going to test?
+What is the null hypothesis or alternative hypothesis?
+What statistical test would you use to test the hypothesis? And why?
+What data is needed to run the statistical test?
