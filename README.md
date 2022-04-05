@@ -70,7 +70,7 @@ Columns: carcompanies <- MechaCar and Competitor
 >
 > chisq.test(tbl) #compare categorical distributions
 
-If the p-value is under .05 significance level, the null hypothesis is rejected, and there is a significant difference in performance between a MechaCar and the competitor. 
+If the p-value is under .05 significance level, the null hypothesis is rejected, and there is a significant difference in performance between MechaCar and the competitor. 
 
 
 
