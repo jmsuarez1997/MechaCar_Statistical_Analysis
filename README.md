@@ -28,14 +28,50 @@ The design specifications for the MechaCar suspension coils dictate that the var
 
 ## T-Tests on Suspension Coils
 
-briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
+The t.test() function was used to determine if the mean PSI across __all__ manufacturing lots is statistically different from the population's mean of 1,500 pounds per square inch. One-sample t-test is used to test the following hypotheses:
+
+>H0 : There is no statistical difference between the observed sample mean and its presumed population mean.
+>
+>Ha : There is a statistical difference between the observed sample mean and its presumed population mean.
+
+![Lot_summary](https://raw.githubusercontent.com/jmsuarez1997/MechaCar_Statistical_Analysis/main/Resources/Images/ttest1.png)
+
+After conducting the t-test, a p-value of .06028 was found. The p-value is over the significant value of .05, so the findings indicate no statistical difference between the mean PSI across all manufacturing lots and the presumed population mean of 1,500. 
+
+The t.test() function was also used to determine if the mean PSI for __each__ manufacturing lot is statistically different from the population mean of 1,500 pounds per square inch.
+
+![Lot_summary](https://raw.githubusercontent.com/jmsuarez1997/MechaCar_Statistical_Analysis/main/Resources/Images/ttest2.png)
+
+The t-test indicates a p-value of 1 for Lot1. The p-value is over the significance value of .05, so there is no statistical difference between Lot1's PSI mean and its presumed population mean. 
+
+
+![Lot_summary](https://raw.githubusercontent.com/jmsuarez1997/MechaCar_Statistical_Analysis/main/Resources/Images/ttest3.png)
+
+Lot2 has a p-value of .6072 and is over the significance value of .05. There is no statistical difference between Lot2's PSI mean and its presumed population mean. 
+
+![Lot_summary](https://raw.githubusercontent.com/jmsuarez1997/MechaCar_Statistical_Analysis/main/Resources/Images/ttest4.png)
+
+Lot 3 has a p-value of .04168 and is under the significance value of .05. The null hypothesis is rejected, and the alternative hypothesis is accepted. There is a statistical difference between Lot3's mean and its presumed population mean of 1,500.
 
 ## Study Design: MechaCar vs Competition
 
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
+MechaCar wants to design a statistical study to quantify its comparison against another car company. MechaCar wants to test how their cars compare in horsepower, city fuel efficiency, and highway fuel efficiency to competitors' cars. Chi-squared is used to compare the distribution of frequencies across two groups and tests the null hypothesis and alternative hypothesis:
+
+>H0 : There is no difference in frequency distribution between MechaCar and the competitor's car performance. 
+>
+>Ha : There is a difference in frequency distribution between MechaCar and the competitor's car performance. 
+
+To start the statistical test, create a table that lists the horsepower, city fuel efficiency, and highway fuel efficiency as rows and MechaCar and the competitors as columns. 
+
+Rows: preformance <- horsepower, city fuel efficiency, and highway fuel efficiency
+Columns: carcompanies <- MechaCar and Competitor
+
+> tbl <- table(data$preformance,data$carcompanies) #generate contingency table
+>
+> chisq.test(tbl) #compare categorical distributions
+
+If the p-value is under .05 significance level, the null hypothesis is rejected, and there is a significant difference in performance between a MechaCar and the competitor. 
 
 
-What metric or metrics are you going to test?
-What is the null hypothesis or alternative hypothesis?
-What statistical test would you use to test the hypothesis? And why?
-What data is needed to run the statistical test?
+
+
