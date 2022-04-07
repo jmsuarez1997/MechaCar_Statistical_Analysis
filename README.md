@@ -1,5 +1,10 @@
 # MechaCar_Statistical_Analysis
-
+ AutosRUs’ newest prototype, the MechaCar, suffers from production troubles blocking the manufacturing team’s progress. This project uses RStudio to analyze the production data for insights that may help the manufacturing team. The project includes the following:
+ 
+ - Performed multiple linear regression analysis to identify which variables in the dataset predict the mpg of MechaCar prototypes
+- Collected summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots
+- Ran t-tests to determine if the manufacturing lots are statistically different from the mean population
+- Designed a statistical study to compare vehicle performance of the MechaCar vehicles against vehicles from other manufacturers.
 ## Linear Regression to Predict MPG
 
 ### Multiple Linear Regression Summary
